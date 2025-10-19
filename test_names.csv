@@ -1,0 +1,74 @@
+Test Name
+1.1. Creating a new campaign with minimal required fields (Positive)
+1.2. Editing an existing campaign (Positive)
+1.3. Duplicating a campaign (Positive)
+1.4. Activating/Deactivating a campaign (Positive)
+1.5. Deleting a campaign (Positive)
+1.6. Attempting to save a campaign with invalid data (Negative)
+1.7. Attempting to save a campaign with missing required fields (Negative)
+1.8. Attempting to save a campaign with an invalid type (Negative)
+2.1. Scheduled Discount - Basic Percentage (Positive)
+2.2. Scheduled Discount - Basic Fixed Amount (Positive)
+2.3. Scheduled Discount - Expired Campaign (Negative)
+2.4. Scheduled Discount - Future Campaign (Negative)
+2.5. EarlyBird Discount - Tiered Redemption (Positive)
+2.6. EarlyBird Discount - Usage Limit (Edge Case)
+2.7. Quantity Discount - Tiered Pricing (Positive)
+2.8. Quantity Discount - Apply as Coupon (Positive)
+2.9. Quantity Discount - Apply as Fee (Positive)
+2.10. Quantity Discount - Display Table (Positive)
+2.11. Quantity Discount - Display Table (Negative)
+2.12. Scheduled Discount - Settings (Positive)
+2.13. Quantity Discount - Settings (Positive)
+2.14. Earlybird Discount - Settings (Positive)
+3.1. Targeting - Entire Store (Positive)
+3.2. Targeting - By Product (Positive)
+3.3. Targeting - By Product with Exclude Items (Negative)
+3.8. Exclude Sale Items (Positive)
+3.9. Exclude Sale Items (Negative)
+4.1. Discounted Prices on Shop and Product Pages (Positive)
+4.2. Promotional Banner Display (Positive)
+4.3. Promotional Banner Disappearance (Negative)
+4.4. Bulk Discount Table Display (Positive)
+4.5. Cart and Checkout - Discount Application (Positive)
+4.6. Cart and Checkout - Recalculation on Quantity Change (Positive)
+4.7. Cart and Checkout - Recalculation on Item Removal (Positive)
+5.1. Global Enable/Disable Addon (Positive)
+5.2. Calculate Discount From (Positive)
+5.3. Product Priority Method (Positive)
+5.4. Save and Reset Settings (Positive)
+5.5. Advanced Settings - Delete All On Uninstall (Positive)
+5.6. Cart Settings - Allow WC Coupon Stacking (Positive)
+5.7. Cart Settings - Allow Campaign Stacking (Positive)
+6.1. Campaign Status Transitions (Edge Case)
+6.2. Campaign Stacking with cart_allowCampaignStacking (Edge Case)
+6.3. Usage Limit for EarlyBird Campaigns (Positive)
+6.4. Data Integrity - JSON Fields (Positive)
+6.5. REST API Interaction (Technical/Integration)
+6.6. Discount Resulting in Zero or Negative Price (Edge Case)
+7.1. Discount on Parent Variable Product
+7.2. Discount on a Single Specific Variation
+7.3. Quantity Discount with Mixed Variations
+8.1. Buy One Get One Free (Same Product)
+8.2. Buy X, Get Y (Different Products)
+9.1. Cart Subtotal Discount
+9.3. Zero-Dollar Checkout (100% Discount)
+10.1. Attempting to save a campaign with an invalid discount type (Negative)
+10.2. Attempting to save a campaign with an invalid discount value (Negative)
+10.3. Attempting to save a quantity campaign with invalid tiers (Negative)
+11.1. Verify campaign creation is logged (Positive)
+11.2. Verify campaign update is logged (Positive)
+11.3. Verify campaign deletion is logged (Positive)
+[Global Settings] - Bulk Table Position
+[Global Settings] - Discount Bar Position
+[Global Settings] - Enable Discount Caching
+[Global Settings] - Clear Discount Cache
+[Global Settings] - Enable Debug Mode
+[Global Settings] - View Logs
+[Global Settings] - Clear Log Files
+[Product Settings] - Customize Table
+[Cart Settings] - Allow Stacking with WooCommerce Coupons
+[Cart Settings] - Allow Stacking with Other Discount Campaigns
+[Advanced Settings] - Delete All Data on Uninstall
+[Campaign Creation] - APPLY DISCOUNT AS - Strike through in line total
+[Campaign Creation] - Cart Page Message Location

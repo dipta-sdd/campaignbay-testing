@@ -1,0 +1,32 @@
+# docker-compose.legacy.yml
+
+services:
+  db:
+    image: mysql:5.7
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: password
+
+  wordpress:
+    # CRITICAL: Use an older WP image that comes with PHP 5.6
+    image: wordpress:5.6-apache
+    depends_on:
+      - db
+    ports:
+      - "8008:80" # Change 8000 for each env (e.g., 8003, 8004...)
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: password
+      WORDPRESS_DB_NAME: wordpress
+    volumes:
+      - ../../plugin:/var/www/html/wp-content/plugins/campaign-bay # Share your plugin code
+      - wp_data:/var/www/html
+
+volumes:
+  db_data:
+  wp_data:

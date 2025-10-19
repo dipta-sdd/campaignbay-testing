@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordPress Test Environments Dashboard</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* A little extra style to make the iframes blend in better */
+        body {
+            background-color: #0f172a; /* bg-slate-900 */
+        }
+    </style>
+</head>
+<body class="bg-slate-900">
+
+    <div class="m-0 p-0">
+
+        <!-- Header -->
+        <header class="text-center mb-10">
+            <h1 class="text-4xl font-extrabold text-white">WordPress & WooCommerce Test Environments</h1>
+            <p class="text-slate-400 mt-2">Monitoring all 8 test configurations.</p>
+        </header>
+
+        <!-- Grid container for the iframes -->
+        <main class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-2">
+
+            <!-- Environment 1 -->
+            <div class="bg-slate-800 rounded-lg shadow-xl p-1">
+                <h2 class="font-bold text-white">Environment 1: Port 8001</h2>
+                <p class="text-sm text-slate-400">(Latest WP, Latest WC, Classic Theme)</p>
+                <iframe src="http://localhost:8001/?post_type=product" class="w-full h-[100vh] border-2 border-slate-700 rounded-md bg-white" title="Test Environment 1"></iframe>
+            </div>
+
+            <!-- Environment 2 -->
+            <div class="bg-slate-800 rounded-lg shadow-xl p-1">
+                <h2 class="font-bold text-white">Environment 2: Port 8002</h2>
+                <p class="text-sm text-slate-400">(Latest WP, Oldest WC, Classic Theme)</p>
+                <iframe src="http://localhost:8002/?post_type=product" class="w-full h-[100vh] border-2 border-slate-700 rounded-md bg-white" title="Test Environment 2"></iframe>
+            </div>
+
+            <!-- Environment 3 -->
+            <div class="bg-slate-800 rounded-lg shadow-xl p-1">
+                <h2 class="font-bold text-white">Environment 3: Port 8003</h2>
+                <p class="text-sm text-slate-400">(Oldest WP, Latest WC, Classic Theme)</p>
+                <iframe src="http://localhost:8003/?post_type=product" class="w-full h-[100vh] border-2 border-slate-700 rounded-md bg-white" title="Test Environment 3"></iframe>
+            </div>
+
+            <!-- Environment 4 -->
+            <div class="bg-slate-800 rounded-lg shadow-xl p-1">
+                <h2 class="font-bold text-white">Environment 4: Port 8004</h2>
+                <p class="text-sm text-slate-400">(Oldest WP, Oldest WC, Classic Theme)</p>
+                <iframe src="http://localhost:8004/?post_type=product" class="w-full h-[100vh] border-2 border-slate-700 rounded-md bg-white" title="Test Environment 4"></iframe>
+            </div>
+
+            <!-- Environment 5 -->
+            <div class="bg-slate-800 rounded-lg shadow-xl p-1">
+                <h2 class="font-bold text-white">Environment 5: Port 8005</h2>
+                <p class="text-sm text-slate-400">(Latest WP, Latest WC, Block Theme)</p>
+                <iframe src="http://localhost:8005/?post_type=product" class="w-full h-[100vh] border-2 border-slate-700 rounded-md bg-white" title="Test Environment 5"></iframe>
+            </div>
+
+            <!-- Environment 6 -->
+            <div class="bg-slate-800 rounded-lg shadow-xl p-1">
+                <h2 class="font-bold text-white">Environment 6: Port 8006</h2>
+                <p class="text-sm text-slate-400">(Latest WP, Oldest WC, Block Theme)</p>
+                <iframe src="http://localhost:8006/?page_id=34" class="w-full h-[100vh] border-2 border-slate-700 rounded-md bg-white" title="Test Environment 6"></iframe>
+            </div>
+
+            <!-- Environment 7 -->
+            <div class="bg-slate-800 rounded-lg shadow-xl p-1">
+                <h2 class="font-bold text-white">Environment 7: Port 8007</h2>
+                <p class="text-sm text-slate-400">(Oldest WP, Latest WC, Legacy Theme)</p>
+                <iframe src="http://localhost:8007/?post_type=product" class="w-full h-[100vh] border-2 border-slate-700 rounded-md bg-white" title="Test Environment 7"></iframe>
+            </div>
+
+            <!-- Environment 8 -->
+            <div class="bg-slate-800 rounded-lg shadow-xl p-1">
+                <h2 class="font-bold text-white">Environment 8: Port 8008</h2>
+                <p class="text-sm text-slate-400">(Oldest WP, Oldest WC, Legacy Theme)</p>
+                <iframe src="http://localhost:8008/?post_type=product" class="w-full h-[100vh] border-2 border-slate-700 rounded-md bg-white" title="Test Environment 8"></iframe>
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
