@@ -1,4 +1,4 @@
-
+# docker compose exec db mysql -u root -p
 # cd env-02 && docker compose exec wordpress bash
 curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 chmod +x wp-cli.phar
